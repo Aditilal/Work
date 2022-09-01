@@ -40,7 +40,16 @@ Button ToastClick, GenNotification, ChangeText, ModalBtn;
         ChangeText=findViewById(R.id.ChangeText);
         ModalBtn=findViewById(R.id.ModalBtn);
         dialog=new Dialog(this);
-
+        if(et1.getText().toString()=="")
+        {
+            et1.setText("Please Enter a data");
+        }
+        else
+        {
+             goAhead();
+        }
+        public void goAhead(){
+            //This generates a toast
         ToastClick.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -52,23 +61,25 @@ Button ToastClick, GenNotification, ChangeText, ModalBtn;
         GenNotification.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+//Generates a notification with dismiss action button
 showNotifiction();
             }
         });
         ChangeText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //Changes the text to completed
                 et1.setText("Completed");
             }
         });
         ModalBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+//Modal PopUp
                 openDialog();
             }
         });
+    }
     }
     public void openDialog() {
 
