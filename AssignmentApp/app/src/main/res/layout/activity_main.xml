@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:backgroundTint="@null"
+
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="wrap_content"
+        android:layout_height="79dp"
+        android:layout_alignParentStart="true"
+android:textAlignment="center"
+        android:fontFamily="monospace"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="74dp"
+        android:layout_marginLeft="74dp"
+        android:layout_marginTop="137dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginRight="76dp"
+        android:layout_marginBottom="515dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.265"
+        android:gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="262dp"
+        android:layout_height="353dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="98dp"
+        android:layout_marginLeft="98dp"
+        android:layout_marginTop="297dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginRight="51dp"
+        android:layout_marginBottom="81dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.684"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.785">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ToastClick"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/mybutton"
+            android:paddingVertical="2dp"
+            android:text="TOAST" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/GenNotification"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/mybutton"
+            android:text="NOTIFICATION" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ModalBtn"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mybutton"
+            android:bottomLeftRadius="10dp"
+            android:layout_marginBottom="10dp"
+            android:bottomRightRadius="10dp"
+            android:text="MODAL"
+            android:topLeftRadius="10dp"
+            android:topRightRadius="10dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ChangeText"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/mybutton"
+            android:text="CHANGE" />
+
+    </LinearLayout>
+
+</RelativeLayout>
